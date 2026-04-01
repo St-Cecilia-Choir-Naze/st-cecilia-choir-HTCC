@@ -1,103 +1,77 @@
-# Futo-cyber-defenders-club
-FUTO CYBER DEFENDERS CLUB  :  a website for  FCDC group
----
+# ST. CECILLIA CHOIR - HTCC NAZE
 
-# 🛡️ FUTO CYBER DEFENDERS CLUB (FCDC)
-### **SECURITY FOR SERVICE**
+### *Official Digital Library and Community Portal*
 
----
-
-## 📖 Overview
-Built with dedication to Cyber Security enthusiasts, the **FUTO Cyber Defenders Club (FCDC)** is a focused and beginner-friendly website created for students of the **Cyber Security Department** and related departments — **CYB, CSC, IFT, & SOE** — under the **School of Information and Communication Technology (SICT / ASICTS)** at the **Federal University of Technology, Owerri (FUTO)**.
-
-**FCDC** serves as a **central hub for curated free and paid cybersecurity resources**, aimed at training cybersecurity enthusiasts, students, aspiring ethical hackers, and anyone passionate about **digital defense and threat intelligence** — at **FUTO and beyond**.
+Welcome to the official repository for the **St. Cecilia Choir, Holy Trinity Catholic Church (HTCC) Naze**. This platform serves as a centralized hub for choristers to access liturgical music, stay updated on parish events, and celebrate our ministry through media.
 
 ---
 
-## ✨ Features
-- 🧠 Curated links to threat intelligence reports, ethical hacking tutorials, security roadmaps, forensics blogs, and hands-on CTF challenges  
-- 💸 Categories for free and paid cybersecurity training platforms  
-- 🔍 Built-in search functionality to easily find specific security domains  
-- 📱 Mobile-responsive layout for learning on the go  
-- ⚙️ Simple UI/UX for quick access to critical knowledge  
-- 🧭 **Motto:** *Vigilant Minds, Secure Systems*  
+## 🎵 Project Overview
+
+The goal of this website is to bridge the gap between traditional liturgical music and modern accessibility. It provides a structured environment for choristers to study their parts and for the parish community to engage with the choir's activities.
+
+### Key Modules
+
+* **🎼 Musical Scores & Scripts Library:** A searchable database of PDF scores, Tonic Sol-fa sheets, and MIDI/MP3 rehearsal files categorized by Liturgical Season (Advent, Lent, Ordinary Time, etc.).
+* **📅 Choir Events Page:** An integrated calendar for tracking rehearsal schedules, Feast Day celebrations, and Archdiocesan competitions.
+* **📸 Media Gallery:** A responsive carousel and grid view showcasing photographs and videos from various performances and church functions.
+* **🙏 Liturgical Resource Center:** Quick links to the daily Mass readings and Choral Anthems.
 
 ---
 
-## 💻 Technologies Used
-- **HTML5**
-- **CSS3 (Flexbox/Grid)**
-- **JavaScript (DOM manipulation)**
-- **JSON** (for structured data storage)
+## 🚀 Features
+
+* **User-Friendly Navigation:** Simple UI designed for choristers of all ages.
+* **Mobile-First Design:** Easy access to sheet music directly from a smartphone during rehearsals.
+* **Secure Admin Panel:** Dedicated back-end for the Choir Secretary or Librarian to upload new scripts and update the event timeline.
+* **Categorization:** Filter music by voice part (Soprano, Alto, Tenor, Bass) or by composer.
 
 ---
 
-## 🚀 How to Use
-1. **Clone or download** the repository  
-2. **Open** `index.html` in your browser  
-3. **Use the search bar** or **browse categories** to find resources on topics like:
-   - Malware Analysis  
-   - Network Security  
-   - Digital Forensics  
-   - Ethical Hacking  
-   - Threat Intelligence  
-4. **Click any resource link** to visit the original page (e.g. TryHackMe, Hack The Box, Cybrary, etc.)
+## 🛠️ Technology Stack
+
+* **Frontend:** HTML5, CSS3, JavaScript (React/Next.js recommended)
+* **Styling:** Tailwind CSS or Bootstrap 5
+* **Backend:** Node.js / Python (Django or Flask)
+* **Database:** PostgreSQL or Firebase (for storing score metadata and event logs)
+* **Storage:** AWS S3 or Cloudinary (for hosting high-resolution PDFs and images)
 
 ---
 
-## 🧩 Resource Structure (JSON Format)
-Each cybersecurity resource is stored as an object inside an array:
+## 📂 Directory Structure
 
-```json
-{
-  "title": "Intro to Defensive Security",
-  "type": "Pathway",
-  "platform": "TryHackMe",
-  "category": "Blue Teaming",
-  "link": "https://tryhackme.com/path/outline/defensive-security",
-  "isFree": false
-}
+```text
+├── public/                 # Static assets (logos, icons)
+├── src/
+│   ├── components/         # Reusable UI components (Navbar, Carousel)
+│   ├── pages/              # Library, Events, and Gallery pages
+│   ├── styles/             # Global CSS and themes
+│   └── utils/              # Helper functions for filtering scores
+├── scores/                 # PDF and image storage for musical scripts
+└── README.md
 
----
-
-🌐 Hosting
-
-You can host the website for free using:
-
-GitHub Pages
-
-Vercel
-
-
+```
 
 ---
 
-🧾 License
+## 🤝 Contribution
 
-This project is open source and free to use.
-You can modify and contribute to help improve it for the FUTO cybersecurity community.
-<img width="500" height="500" alt="Futon cyber defenders club_20251001_135624_0001" src="https://github.com/user-attachments/assets/cb2603ac-0a40-421b-be09-2bee6e234fd8" />
-<img width="500" height="500" alt="Futon cyber defenders club_20251001_135623_0000" src="https://github.com/user-attachments/assets/85e00af9-2fc5-4ece-bc48-19428f1441a5" />
+We welcome contributions from tech-savvy members of the choir and the HTCC Naze community.
+
+1. **Fork** the repository.
+2. Create a **Feature Branch** (`git checkout -b feature/NewFeature`).
+3. **Commit** your changes (`git commit -m 'Add some NewFeature'`).
+4. **Push** to the branch (`git push origin feature/NewFeature`).
+5. Open a **Pull Request**.
+
+---
+
+## 📜 License
+
+This project is for the private use of the St. Cecilia Choir, HTCC Naze. Musical scores uploaded are subject to copyright laws; please ensure you have the right to distribute digital copies of specific compositions.
 
 ---
 
-🔰 Logo
+**Soli Deo Gloria!** *St. Cecilia, Pray for us.*
 
-The FUTO CYBER DEFENDERS CLUB logo symbolizes constant watchfulness and robust defense in the digital realm.
-Feel free to reuse or modify it — with proper credit.
-
---
-
-⚡ Motto
-
-> "Cyber Security Beyond the Classroom!!"
----
-
-💬 Final Words
-
-Built with HTML, CSS, JSON, and JavaScript,
-this project stands as a step toward empowering FUTO students to take cybersecurity learning beyond the classroom walls.
-
----
-Happy Hacking! 👾
-— FCDC Team
+## Sing Praises......... To The Lord!!!!
