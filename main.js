@@ -64,7 +64,24 @@ muteBtn.addEventListener('click', () => {
 
 
 
+// For Choir practice section
 
+
+document.addEventListener("DOMContentLoaded", function() {
+    const days = ["Sundays", "Mondays", "Tuesdays", "Wednesdays", "Thursdays", "Fridays", "Saturdays"];
+    const todayName = days[new Date().getDay()];
+    
+    // Find all day tags and highlight the one that matches today
+    const dayTags = document.querySelectorAll('.day-tag');
+    
+    dayTags.forEach(tag => {
+        if (tag.innerText === todayName) {
+            tag.style.background = "#ffd700"; // Change to Gold
+            tag.style.color = "#5a0000";      // Change text to Red
+            tag.innerHTML += " (Today!)";
+        }
+    });
+});
 
 
 
