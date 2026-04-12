@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="image-gallery.css">
 
-  <link rel="icon" type="png" href=" IMAGES\choir-logo.jpg">
+  <link rel="icon" type="png" href=" /IMAGES/choir-logo.jpg">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -135,10 +135,30 @@
               IMAGE GALLERY
             </p><br>
 
+          </div><br>
+
+       <br>
+         
+          <br>
+          <div class="events-btn">
+          
+            <a href=" #image-carousel">
+              <button class="home">
+                IMAGE CAROUSEL
+              </button>
+            </a>
+          
+            <a href=" #image-slideshow">
+              <button id=" ">
+                IMAGE SLIDESHOW
+              </button><br>
+
+              <a href=" #video-carousel">
+                <button id=" ">
+                  VIDEO CAROUSEL
+                </button><br>
           </div>
 
-
-         
         </div>
     </div>
     </div>
@@ -146,7 +166,7 @@
 
 </section><br>
 
-<div class="road-map" data-aos="flip-left" data-aos-duration="3000">
+<div class="road-map" data-aos="flip-left" data-aos-duration="3000" id="image-slideshow">
   <p class="roadmap-header">
     IMAGE CAROUSEL
   </p><br>
@@ -165,7 +185,7 @@
 
 <br>
 
-<div class="image-carousel">
+<div class="image-carousel"  data-aos="flip-up" data-aos-duration="3000" id="image-carousel">
   <div class="carousel-viewport">
     <div id="carousel-slide" class="carousel-slide">
     </div>
@@ -180,7 +200,37 @@
 
 </div>
 
+<br>
+<section class="road-map" data-aos="flip-left" data-aos-duration="3000" id="video-carousel">
+  <p class="roadmap-header">
+    MUSIC BOOM SEASON 1 (2025) HIGHLIGHTS
+  </p><br>
 
+  <br>
+  
+            <div class="video-carousel-container">
+              <div class="video-window">
+                <video id="main-video" autoplay muted loop playsinline>
+                  <source src="" type="video/mp4">
+                </video>
+            
+                <div class="video-info">
+                  <h3 id="video-title">Loading...</h3>
+                </div>
+              </div>
+
+              
+            
+              <div class="video-controls">
+                <button id="prevVid"><i class="fas fa-chevron-left"></i> Prev</button>
+                <button id="nextVid">Next <i class="fas fa-chevron-right"></i></button>
+                <button id="volume-toggle" class="volume-btn">
+                  <i class="fas fa-volume-mute" id="volume-icon"></i>
+                </button>
+              </div>
+            </div>
+</section>
+</section>
 
 <br>
 <div class="our-mission">

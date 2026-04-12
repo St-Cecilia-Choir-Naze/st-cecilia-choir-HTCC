@@ -36,7 +36,6 @@ backdrop-filter: opacity(100%) blur(100px) saturate(100px);
 header {
   margin: 0px;
   padding: 0px;
-  
   height: 30%;
   background: #4A0000;
   
@@ -46,6 +45,8 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
   
 }
 
@@ -244,7 +245,8 @@ button:hover {
 .hero {
   padding: 2rem;
   text-align: center;
-  background-image: url( /IMAGES/HTCC.png);
+  /*background-image: url( /IMAGES/HTCC.png);*/
+  background-image: url( /music-boom/IMG_8.jpg);
   background-clip: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -254,6 +256,8 @@ button:hover {
  font-size: 1.2rem;
  font-weight:bold ;
  text-shadow: 3px 3px 5px #000;
+ border-bottom-right-radius: 20px;
+ border-bottom-left-radius: 20px;
 }
 
 

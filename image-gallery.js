@@ -70,3 +70,84 @@ fetch('image-gallery.json')
         renderImages(data);
     })
     .catch(err => console.error("Error loading choir images:", err));
+
+
+
+    //for video gallery section
+
+    let videoList = [];
+let currentIdx = 0;
+
+const videoElem = document.getElementById('main-video');
+const videoSource = videoElem.querySelector('source');
+const titleElem = document.getElementById('video-title');
+const NextBtn = document.getElementById('nextVid');
+const PrevBtn = document.getElementById('prevVid');
+
+// 1. Fetch the Video Data
+fetch('video-gallery.json')
+    .then(response => response.json())
+    .then(data => {
+        videoList = data;
+        updateVideo(); // Load the first video
+    });
+
+// 2. Function to Update the Player
+function updateVideo() {
+    if (videoList.length > 0) {
+        const currentVideo = videoList[currentIdx];
+        
+        // Change the source and the title
+        videoSource.src = currentVideo.url;
+        titleElem.innerText = currentVideo.title;
+
+        // Must call .load() when changing sources dynamically
+        videoElem.load();
+        videoElem.play();
+    }
+}
+
+// 3. Button Listeners
+NextBtn.addEventListener('click', () => {
+    currentIdx = (currentIdx + 1) % videoList.length;
+    updateVideo();
+});
+
+PrevBtn.addEventListener('click', () => {
+    currentIdx = (currentIdx - 1 + videoList.length) % videoList.length;
+    updateVideo();
+});
+
+
+// for mute and unmute video in the video gallery section
+
+const volumeBtn = document.getElementById('volume-toggle');
+const volumeIcon = document.getElementById('volume-icon');
+const Video = document.getElementById('main-video');
+
+volumeBtn.addEventListener('click', () => {
+    if (Video.muted) {
+        Video.muted = false; // Turn sound ON
+        volumeIcon.classList.remove('fa-volume-mute');
+        volumeIcon.classList.add('fa-volume-up');
+    } else {
+        Video.muted = true; // Turn sound OFF
+        volumeIcon.classList.remove('fa-volume-up');
+        volumeIcon.classList.add('fa-volume-mute');
+    }
+});
+
+// IMPORTANT: When the user clicks "Next" or "Prev", keep their volume choice!
+// If they unmuted the first video, the next one should also stay unmuted.
+function updateVideo() {
+    if (videoList.length > 0) {
+        const currentVideo = videoList[currentIdx];
+        videoSource.src = currentVideo.url;
+        titleElem.innerText = currentVideo.title;
+
+        Video.load();
+        
+        // We don't reset video.muted here, so the user's preference persists
+        Video.play();
+    }
+}
